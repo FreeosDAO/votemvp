@@ -1,0 +1,518 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "dparamerase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "paramname",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "dparameter",
+            "base": "",
+            "fields": [
+                {
+                    "name": "paramname",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "dparamupsert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "paramname",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "init",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "paramerase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "paramname",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "parameter",
+            "base": "",
+            "fields": [
+                {
+                    "name": "paramname",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "paramupsert",
+            "base": "",
+            "fields": [
+                {
+                    "name": "paramname",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "ratify_record",
+            "base": "",
+            "fields": [
+                {
+                    "name": "iteration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "participants",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ratified",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "reward",
+            "base": "",
+            "fields": [
+                {
+                    "name": "iteration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "iteration_cls",
+                    "type": "asset"
+                },
+                {
+                    "name": "iteration_issuance",
+                    "type": "asset"
+                },
+                {
+                    "name": "participant_issuance",
+                    "type": "asset"
+                },
+                {
+                    "name": "participants",
+                    "type": "uint32"
+                },
+                {
+                    "name": "issuance_rate",
+                    "type": "float64"
+                },
+                {
+                    "name": "mint_fee_percent",
+                    "type": "float64"
+                },
+                {
+                    "name": "locking_threshold",
+                    "type": "float64"
+                },
+                {
+                    "name": "pool",
+                    "type": "bool"
+                },
+                {
+                    "name": "burn",
+                    "type": "bool"
+                },
+                {
+                    "name": "ratified",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "survey_record",
+            "base": "",
+            "fields": [
+                {
+                    "name": "iteration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "participants",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q1choice1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q1choice2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q1choice3",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q2average",
+                    "type": "float64"
+                },
+                {
+                    "name": "q3choice1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q3choice2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q3choice3",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q4average",
+                    "type": "float64"
+                },
+                {
+                    "name": "q5choice1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5choice2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5choice3",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5choice4",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5choice5",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5choice6",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5choice7",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5choice8",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "svr",
+            "base": "",
+            "fields": [
+                {
+                    "name": "survey0",
+                    "type": "uint32"
+                },
+                {
+                    "name": "survey1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "survey2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "survey3",
+                    "type": "uint32"
+                },
+                {
+                    "name": "survey4",
+                    "type": "uint32"
+                },
+                {
+                    "name": "vote0",
+                    "type": "uint32"
+                },
+                {
+                    "name": "vote1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "vote2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "vote3",
+                    "type": "uint32"
+                },
+                {
+                    "name": "vote4",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ratify0",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ratify1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ratify2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ratify3",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ratify4",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "system",
+            "base": "",
+            "fields": [
+                {
+                    "name": "init",
+                    "type": "time_point"
+                },
+                {
+                    "name": "iteration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "usercount",
+                    "type": "uint32"
+                },
+                {
+                    "name": "claimevents",
+                    "type": "uint64"
+                },
+                {
+                    "name": "participants",
+                    "type": "uint32"
+                },
+                {
+                    "name": "cls",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "tick",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "version",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "vote",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "q3response",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "vote_record",
+            "base": "",
+            "fields": [
+                {
+                    "name": "iteration",
+                    "type": "uint32"
+                },
+                {
+                    "name": "participants",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q1average",
+                    "type": "float64"
+                },
+                {
+                    "name": "q2average",
+                    "type": "float64"
+                },
+                {
+                    "name": "q3average",
+                    "type": "float64"
+                },
+                {
+                    "name": "q4choice1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q4choice2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q5average",
+                    "type": "float64"
+                },
+                {
+                    "name": "q6choice1",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q6choice2",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q6choice3",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q6choice4",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q6choice5",
+                    "type": "uint32"
+                },
+                {
+                    "name": "q6choice6",
+                    "type": "uint32"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "dparamerase",
+            "type": "dparamerase",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "dparamupsert",
+            "type": "dparamupsert",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "init",
+            "type": "init",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "paramerase",
+            "type": "paramerase",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "paramupsert",
+            "type": "paramupsert",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "tick",
+            "type": "tick",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "version",
+            "type": "version",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "vote",
+            "type": "vote",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "dparameters",
+            "type": "dparameter",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "parameters",
+            "type": "parameter",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "ratifyrecord",
+            "type": "ratify_record",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "rewards",
+            "type": "reward",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "surveyrecord",
+            "type": "survey_record",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "svrs",
+            "type": "svr",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "system",
+            "type": "system",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "voterecord",
+            "type": "vote_record",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
