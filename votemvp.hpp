@@ -24,6 +24,7 @@ public:
   [[eosio::action]] void version();
   [[eosio::action]] void init();
   [[eosio::action]] void tick();
+  [[eosio::action]] void cron();
   void trigger_new_iteration(uint32_t new_iterationß);
 
   // maintain actions TODO: remove in production version

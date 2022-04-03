@@ -16,7 +16,7 @@ namespace freedao {
 using namespace eosio;
 using namespace std;
 
-const std::string VERSION = "0.1.3mvp";
+const std::string VERSION = "0.1.4mvp";
 
 // ACTION
 void freeosgov::version() {
@@ -204,8 +204,12 @@ void freeosgov::tick() {
       sys.iteration = new_iteration;
     });
   }
+}
 
-  
+
+// ACTION
+void freeosgov::cron() {
+  tick();
 }
 
 // tidy up at the end of an iteration - save SVR data in the reward record
