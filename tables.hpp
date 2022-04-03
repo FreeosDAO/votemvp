@@ -21,26 +21,6 @@ uint64_t primary_key() const { return 0; } // return a constant to ensure a sing
 };
 using system_index = eosio::multi_index<"system"_n, system>;
 
-// REWARDS
-// rewards table
-struct[[ eosio::table("rewards"), eosio::contract("votemvp") ]] reward {
-
-uint32_t  iteration;
-asset     iteration_cls;
-asset     iteration_issuance;
-asset     participant_issuance;
-uint32_t  participants;
-double    issuance_rate;
-double    mint_fee_percent;
-double    locking_threshold;
-bool      pool;
-bool      burn;
-bool      ratified;
-
-uint64_t primary_key() const { return iteration; }
-};
-using rewards_index = eosio::multi_index<"rewards"_n, reward>;
-
 
 // POINTS ACCOUNTS
 struct[[ eosio::table("accounts"), eosio::contract("freeosgov") ]] account {
@@ -227,30 +207,6 @@ struct[[ eosio::table("svrs"), eosio::contract("votemvp") ]] svr {
 };
 using svr_index = eosio::multi_index<"svrs"_n, svr>;
 
-// SURVEY
-// Running processing of survey results
-struct[[ eosio::table("surveyrecord"), eosio::contract("votemvp") ]] survey_record {
-    uint32_t iteration;
-    uint32_t participants;
-    uint32_t q1choice1;
-    uint32_t q1choice2;
-    uint32_t q1choice3;
-    double q2average;
-    uint32_t q3choice1;
-    uint32_t q3choice2;
-    uint32_t q3choice3;
-    double q4average;
-    uint32_t q5choice1;
-    uint32_t q5choice2;
-    uint32_t q5choice3;
-    uint32_t q5choice4;
-    uint32_t q5choice5;
-    uint32_t q5choice6;
-    uint32_t q5choice7;
-    uint32_t q5choice8;
-    uint64_t primary_key() const { return 0; } // return a constant to ensure a single-row table
-};
-using survey_index = eosio::multi_index<"surveyrecord"_n, survey_record>;
 
 // VOTE
 // Running processing of vote responses
@@ -273,17 +229,6 @@ struct[[ eosio::table("voterecord"), eosio::contract("votemvp") ]] vote_record {
     uint64_t primary_key() const { return 0; } // return a constant to ensure a single-row table
 };
 using vote_index = eosio::multi_index<"voterecord"_n, vote_record>;
-
-
-// RATIFY
-// Running processing of ratify responses
-struct[[ eosio::table("ratifyrecord"), eosio::contract("votemvp") ]] ratify_record {
-    uint32_t iteration;
-    uint32_t participants;
-    uint32_t ratified;
-    uint64_t primary_key() const { return 0; } // return a constant to ensure a single-row table
-};
-using ratify_index = eosio::multi_index<"ratifyrecord"_n, ratify_record>;
 
 
 // EXCHANGERATE
